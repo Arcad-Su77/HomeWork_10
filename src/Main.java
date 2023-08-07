@@ -15,7 +15,7 @@ public class Main {
         switch (taskNumberRun) {
             case 1 -> task1();    //Задание 1
             case 2 -> task2();    //Задание 2
-//            case 3 -> task3();    //Задание 3
+            case 3 -> task3();    //Задание 3
 //            case 4 -> task4();    //Задание 4
 //            case 5 -> task5();    //Задание 5
 //            case 6 -> task6();    //Задание 6
@@ -28,6 +28,10 @@ public class Main {
         }
         System.out.println("_________");
         System.out.println("Домашка закончилась. Всем спасибо, все свободны.");
+    }
+
+    private static void task3() {
+        System.out.println("Задание 3");
     }
 
     private static void task2() {
