@@ -33,6 +33,9 @@ public class Main {
 
     private static void task3() {
         System.out.println("Задание 3");
+        String fullName = task1();
+        String upName = fullName.replace("ё", "е");
+        System.out.println("Данные ФИО сотрудника — " + upName);
     }
 
     private static void task2() {
