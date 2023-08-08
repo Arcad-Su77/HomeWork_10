@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,6 +41,23 @@ public class Main {
 
     private static void task1() {
         System.out.println("Задание 1");
+        String firstName; // для хранения имени.
+        String middleName; // для хранения отчества.
+        String lastName; // для хранения фамилии.
+        String fullName; // для хранения Ф. И. О. сотрудника в формате "Фамилия Имя Отчество".
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Имя: ");
+        firstName = sc.nextLine();
+        System.out.print("Отчество: ");
+        middleName = sc.nextLine();
+        System.out.print("Фамилия: ");
+        lastName = sc.nextLine();
+        sc.close();
+
+        fullName = lastName + " " + firstName + " " + middleName;
+
+        System.out.println("ФИО сотрудника — " + fullName);
     }
 
 }
